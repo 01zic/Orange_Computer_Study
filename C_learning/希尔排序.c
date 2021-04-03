@@ -62,12 +62,15 @@ void ShellSort(int* a, int N)
     {
         for (int i = incre;  i < N; i++)//在直接插入排序的基础上修改增量的值
         {
-            while (a[i-incre]>a[i] )//比较每一个分组的大小，然后按照从小到大的顺序进行交换
+            int j = 2;
+            while (a[i-incre]>a[i]&&(i-incre)>=0 )//设置循环条件
             {
                 swap(a[i - incre], a[i]);
+                i = i - (j++) * incre;
             }
         
         }
 
     }
 }
+
