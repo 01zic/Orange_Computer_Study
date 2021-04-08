@@ -1,0 +1,13 @@
+宏：
+1.用宏定义函数的时候所有的值都需要加括号
+
+头文件：
+1.自定义头文件的时候，是使用#include“ .h”,.h文件是函数的原型文件，函数的定义文件是.c里面也需要有#include“ .h”
+2.在自定义头文件里面定义全局变量的时候需要在.h文件里面写extern int name
+3.标准头文件：
+#ifndef 1
+#define 1
+int max(int a, int b);
+extern int name;
+#endif // !1
+
